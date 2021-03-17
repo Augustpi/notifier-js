@@ -17,6 +17,24 @@ Notifier('info', 'title', 'content here', 1000).show();
 
 ## Confirm dialog in notification
 
+```
+const data = {
+  'Property 1': 'Value 1',
+  'Property 2': 'Value 2',
+  'Property 3': 'Value 3',
+  'Property 4': 'Value 4'
+}
+
+confirmHandler({
+  confirmData: data,
+  callback: (data) => { 
+    console.log(data) 
+  },
+  data: 'confirmation callback data',
+  btnCaption: 'Okay'
+})
+```
+
 ## Contribute
 Our project is, without any discrimination, open to anyone who is willing to make a contribution!
 
