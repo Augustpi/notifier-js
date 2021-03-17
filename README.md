@@ -38,7 +38,7 @@ import Notifier, { ***notify*** } from './src/notifier';
 ```
 * **duration** int **milliseconds**
 
-## Confirm dialog in notification
+## Confirm dialog
 
 ```
 const data = {
