@@ -9,10 +9,33 @@ Bealtiful notifications with CSS and Vanilla JavaScript!
 ## How to use
 
 ```
-Notifier('info', 'title', 'content here', 1000).show();
+import './src/css/notifier.css';
+import './src/css/modal.css';
+import './style.css';
+
+import Notifier, { notify } from './src/notifier';
+
+const notification = new Notifier({
+  title: 'title,
+  type: notify.type.success,
+  content: 'content,
+  duration: 49000
+});
+
+notification.show();
 ```
 
 * **type** -> 'success', 'info', 'todo', 'reminder', 'warning' and 'danger' select one of them, 
+You should select one..
+
+import Notifier, { ***notify*** } from './src/notifier';
+```
+// notify.type.success
+// notify.type.info
+// notify.type.reminder
+// notify.type.warining
+// notify.type.danger
+```
 * **duration** int **milliseconds**
 
 ## Confirm dialog in notification
