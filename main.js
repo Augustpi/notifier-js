@@ -25,6 +25,7 @@ class Notification extends CreateElement {
     const showDanger = this.elm.create(h.button, { class: `cbtn btn-danger` }, 'Danger')
 
     confirmBtn.addEventListener(events.click, this.showConfirmDialog.bind(this))
+
     showSuccess.addEventListener(events.click, this.showNotification.bind(this, 'Success', notify.type.success, 'Something great happening 😄'))
     showInfo.addEventListener(events.click, this.showNotification.bind(this, 'Info', notify.type.info, 'There is a new notification for you 🤓'))
     showWarning.addEventListener(events.click, this.showNotification.bind(this, 'Warning', notify.type.warning, 'Something went wrong! 😱'))
@@ -46,7 +47,7 @@ class Notification extends CreateElement {
       title: title,
       type: type,
       content: content,
-      duration: 49000
+      duration: 4000
     })
     notification.show()
   }
